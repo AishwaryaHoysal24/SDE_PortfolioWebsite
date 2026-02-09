@@ -1,0 +1,449 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Aishwarya Hoysal</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+<div id="wrapper" class="fade-in">
+
+  <!-- Intro -->
+  <div id="intro">
+    <h1>Hello, I'm<br />Aishwarya Hoysal</h1>
+    <p>Python | SQL | API Integrations | Web Dev: Flask, Streamlit</p>
+    <ul class="actions">
+      <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+    </ul>
+  </div>
+
+  <!-- Nav -->
+  <nav id="nav">
+    <ul class="links">
+      <li class="active"><a href="index.html">Projects</a></li>
+    </ul>
+    <ul class="icons">
+      <li><a href="mailto:aishwaryahoysalks@gmail.com" class="icon solid fa-envelope"></a></li>
+      <li><a href="https://linkedin.com/in/aishwaryahoysal24" class="icon brands fa-linkedin"></a></li>
+      <li><a href="https://github.com/AishwaryaHoysal24" class="icon brands fa-github"></a></li>
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <div id="main">
+
+    <!-- Featured Project -->
+    <article class="post featured">
+      <header class="major">
+        <h2>QGen</h2>
+        <p>Smart Question Paper Generator</p>
+      </header>
+      <ul class="actions special">
+        <li>
+          <a href="#" class="button large see-work" data-project="project1">
+            See My Work
+          </a>
+        </li>
+      </ul>
+    </article>
+
+	<!-- Posts -->
+<section class="posts">
+
+  <article>
+    <header>
+      <span class="date"></span>
+      <h2>CalmPal</h2>
+      <p>
+      AI-Powered Mental Health Chatbot</p>
+    </header>
+    <a href="#" class="image fit">
+      <img src="images/calmpal-cover.png" alt="Image" />
+    </a>
+    <ul class="actions special">
+      <li>
+        <a href="#" class="button see-work" data-project="project2">
+          See My Work
+        </a>
+      </li>
+    </ul>
+  </article>
+
+  <article>
+    <header>
+      <span class="date"></span>
+      <h2>X-Ray Analyser</h2>
+      <p>
+      Pneumonia Detection
+    </p>
+    </header>
+    <a href="#" class="image fit">
+      <img src="images/Xray-cover.png" alt="Image" />
+    </a>
+    <ul class="actions special">
+      <li>
+        <a href="#" class="button see-work" data-project="project3">
+          See My Work
+        </a>
+      </li>
+    </ul>
+  </article>
+
+  <article>
+    <header>
+      <span class="date"></span>
+      <h2>LapShop</h2>
+      <p>
+       Laptop Price Estimator
+    </p>
+    </header>
+    <a href="#" class="image fit">
+      <img src="images/lapshop-cover.png" alt="Image" />
+    </a>
+    <ul class="actions special">
+      <li>
+        <a href="#" class="button see-work" data-project="project4">
+          See My Work
+        </a>
+      </li>
+    </ul>
+  </article>
+</section>
+
+ <!-- Footer -->
+  <footer id="footer">
+    <p>~ Aishwarya Hoysal ~</p>
+  </footer>
+
+</div>
+
+<!-- PROJECT MODAL -->
+<div id="project-modal" class="project-modal">
+  <div class="project-modal-content">
+    <span class="close-modal">&times;</span>
+
+    <!-- Title -->
+    <h2 id="modal-title"></h2>
+
+    <!-- Overview -->
+    <h3>Project Overview</h3>
+    <p id="modal-overview"></p>
+
+    <!-- Architecture -->
+    <h3>Application Architecture</h3>
+    <p id="modal-architecture"></p>
+
+    <!-- Project Images -->
+    <div class="modal-image-slider">
+      <button class="img-nav prev">&#10094;</button>
+      <div class="slider-image-container">
+        <img id="modal-image" src="" alt="Project Screenshot" />
+      </div>
+      <button class="img-nav next">&#10095;</button>
+    </div>
+
+    <!-- Features -->
+    <h3>Key Features Implemented</h3>
+    <ul id="modal-features"></ul>
+
+    <!-- Tech Stacks -->
+    <h3>Tech Stacks</h3>
+    <ul id="modal-techstacks"></ul>
+
+    <!-- What I Learned -->
+    <h3>What I Learned</h3>
+    <p id="modal-learn"></p>
+
+    <!-- Links -->
+    <div class="project-links">
+      <a id="modal-github" target="_blank">View GitHub Repository</a>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const projects = {
+    project1: {
+      title: "QGen - Smart Question Paper Generator",
+
+      overview:
+        "QGen is a full-stack application designed for faculty and academic admins to auto-generate optimised question papers. It ensures that the question paper meets defined constraints like difficulty ratio, module coverage, uniqueness, and academic scheme compliance.",
+
+      architecture:
+        "The frontend interface allows faculty to configure syllabus modules, difficulty levels, and cognitive requirements. The backend, built using Python Flask, processes these inputs using an algorithm-driven logic layer. A MySQL database stores questions, syllabus metadata, and constraints. The system generates question papers by fetching data from the database, applying rule-based filtering, and returning structured outputs to the frontend.",
+
+      images: [
+        "Images/qgen/workflow.png",
+        "Images/qgen/home-page.png",
+        "Images/qgen/dashboard.png",
+        "Images/qgen/subjects.png",
+        "Images/qgen/filtered-subjects.png",
+        "Images/qgen/add-subject.png",
+        "Images/qgen/modules.png",
+        "Images/qgen/add-modules.png",
+        "Images/qgen/edit-subjects.png",
+        "Images/qgen/edit-modules.png",
+        "Images/qgen/generate-paper.png",
+        "Images/qgen/gp-results.png",
+        "Images/qgen/print-qp.png",
+        "Images/qgen/acc-settings.png",
+        "Images/qgen/confirm-dlt.png"
+      ],
+      
+        features: [
+        "Rule-based algorithm to avoid question repetition",
+        "Role-based access for faculty and administrators",
+        "Export-ready structured output for academic use",
+        "Dashboard to track analytics on generated papers",
+        "OTP-based update for user credentials",
+        "Mail authentication on user activities"
+      ],
+
+      techstacks: [
+        "Frontend: HTML, CSS, JavaScript",
+        "Backend: Python (Flask)",
+        "Database: MySQL",
+        "Authentication & Mailing: Flask-Mail (SMTP)",
+        "Version Control: Git & GitHub"
+      ],
+
+      learn:
+        "This project helped me understand end-to-end client–server application flow, algorithm-based backend logic, relational database design using primary keys, debugging rule-based systems, and maintaining clean version-controlled code using Git.",
+
+      github: "https://github.com/AishwaryaHoysal24/QGen"
+    },
+
+    project2: {
+      title: "CalmPal - AI-Powered Mental Health Chatbot ",
+
+      overview:
+        "CalmPal is a web-based mental health support chatbot built to provide users with a safe and empathetic space to express their feelings. It listens without judgment, offers friendly responses, and helps users navigate through emotions, all through an engaging chat User Interface.",
+
+      architecture:
+        "This client-centric web architecture where the frontend handles user interaction and mood input, while backend APIs and services provide dynamic content. The application integrates third-party APIs for mental-wellness resources, processes user inputs in real time, and renders personalized suggestions through a responsive User Interface.",
+
+      images: [
+        "Images/calmpal/ChatUI.png"
+      ],
+      
+        features: [
+        "Friendly chatbot User Interface with real-time responses",
+        "Message timestamps like a real chat app",
+        "No data stored (user privacy by design)"
+      ],
+
+      techstacks: [
+        "Frontend: HTML, CSS, JavaScript",
+        "Backend: Python (Streamlit)",
+        "AI Model: Gemini / GPT-style responses via Google Generative AI API",
+        "Version Control: Git & GitHub"
+      ],
+
+      learn:
+        "This project helped me strengthen my understanding of API integration, asynchronous data handling, user-centric User Interface design, and structuring frontend logic for real-time interactions. I also learned how to design applications with focusing on usability and accessibility alongside technical implementation.",
+
+      github: "https://calmpal.streamlit.app/"
+    },
+
+    project3: {
+      title: "X-Ray Analyser | Pneumonia Detection",
+
+      overview:
+        "A full-stack, Flask-based web application that built with Convolutional Neural Network (CNN) to detect pneumonia from chest X-ray images. This tool is built for both healthcare professionals, offering explainable predictions, confidence calibration, and a downloadable medical-style report in real time.",
+
+      architecture:
+        "The application follows a simple ML-powered pipeline where medical images are taken as input from the frontend, preprocessed, and passed to a trained deep learning model for inference. The backend handles model loading and prediction logic, while the frontend displays classification results in a user-friendly interface.",
+
+      images: [
+        "Images/xray/home-page.png",
+        "Images/xray/analysing-image.png",
+        "Images/xray/display-result.png",
+        "Images/xray/display-result2.png",
+        "Images/xray/report-download.png",
+        "Images/xray/report.png",
+        "Images/xray/report2.png",
+        "Images/xray/final.png"
+        
+      ],
+      
+        features: [
+        "Fake Image Detection: Rejects non-X-ray uploads (e.g. selfies, memes, etc) using smart validation.",
+        "Model Confidence Calibration: Displays confidence levels (High, Medium, Low) with colour-coded badges.",
+        "Grad-CAM Heatmap Visualisation: Shows areas in the X-ray that influenced the model’s decision.",
+        "Downloadable Report: Get a well-formatted report including prediction, confidence, and visual explanations.",
+        "Drag & Drop Interface: Clean User Interface for fast and intuitive usage."
+      ],
+
+      techstacks: [
+        "Frontend: HTML, CSS, JavaScript",
+        "Backend: Python (Flask)",
+        "Version Control: Git & GitHub"
+      ],
+
+      learn:
+        "This project helped me understand end-to-end ML-based web application flow, integrating trained models into a web application, and deploying model inference through a Flask backend while maintaining clean separation between ML logic and User Interface.",
+
+      github: "https://github.com/AishwaryaHoysal24/Xray_Analyser"
+    },
+
+    project4: {
+      title: "LapShop | Laptop Price Estimator",
+
+      overview:
+        "A Flask-based web application that predicts the price of a laptop based on key hardware specifications and helps in analysing the market trends.",
+
+      architecture:
+        "A web application architecture where user-selected laptop specifications are processed through a trained ML model to estimate prices. The backend handles data preprocessing and prediction logic, while the frontend collects inputs and displays real-time price estimates.",
+
+      images: [
+        "Images/lapshop/home-page1.png",
+        "Images/lapshop/home-page2.png",
+        "Images/lapshop/home-page3.png",
+        "Images/lapshop/Form.png",
+        "Images/lapshop/load.png",
+        "Images/lapshop/results.png",
+        
+        
+      ],
+
+
+      features: [
+        "Predicts laptop prices based on hardware specifications",
+        "Interactive form-based input for user selections",],
+
+
+      techstacks: [
+        "Frontend: HTML, CSS, JavaScript",
+        "Backend: Python (Flask)",
+        "Version Control: Git & GitHub"
+      ],
+
+      learn:
+        "This project helped me understand and integrate regression models into web applications, handling user-driven inputs, and designing ML-backed systems with a clean frontend–backend separation.",
+
+      github: "https://github.com/AishwaryaHoysal24/LapShop---Laptop-Price-Estimator"
+    }
+  };
+
+   /* ---------------- IMAGE SLIDER STATE ---------------- */
+
+  let currentImages = [];
+  let currentImageIndex = 0;
+
+  const modalImage = document.getElementById("modal-image");
+  const modal = document.getElementById("project-modal");
+
+  /* ---------------- OPEN MODAL ---------------- */
+
+  document.querySelectorAll(".see-work").forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.preventDefault();
+
+      const project = projects[btn.dataset.project];
+      if (!project) return;
+
+      // Text content
+      document.getElementById("modal-title").innerText = project.title;
+      document.getElementById("modal-overview").innerText = project.overview;
+      document.getElementById("modal-architecture").innerText = project.architecture;
+      document.getElementById("modal-learn").innerText = project.learn;
+
+      // Features list
+      const featuresList = document.getElementById("modal-features");
+      featuresList.innerHTML = "";
+      project.features.forEach(feature => {
+        const li = document.createElement("li");
+        li.innerText = feature;
+        featuresList.appendChild(li);
+      });
+
+      // Tech stacks list
+      const techList = document.getElementById("modal-techstacks");
+      techList.innerHTML = "";
+      project.techstacks.forEach(stack => {
+        const li = document.createElement("li");
+        li.innerText = stack;
+        techList.appendChild(li);
+      });
+
+      // GitHub link
+      document.getElementById("modal-github").href = project.github;
+
+      // Image slider init
+      // Images
+      currentImages = project.images || [];
+      currentImageIndex = 0;
+
+    // CRITICAL FIX: Set initial image and ensure it's visible
+    if (currentImages.length > 0) {
+      modalImage.src = currentImages[0];
+      modalImage.style.display = "block";
+      modalImage.onerror = function() {
+        console.error("Failed to load image:", this.src);
+      };
+      modalImage.onload = function() {
+        console.log("Image loaded successfully:", this.src);
+      };} else {
+        modalImage.style.display = "none";}
+
+      // Show modal
+      modal.style.display = "flex";
+    });
+  });
+
+  /* ---------------- IMAGE NAVIGATION ---------------- */
+
+  document.querySelector(".img-nav.next").addEventListener("click", () => {
+    if (!currentImages.length) return;
+
+    currentImageIndex = (currentImageIndex + 1) % currentImages.length;
+    modalImage.src = currentImages[currentImageIndex];
+  });
+
+  document.querySelector(".img-nav.prev").addEventListener("click", () => {
+    if (!currentImages.length) return;
+
+    currentImageIndex =
+      (currentImageIndex - 1 + currentImages.length) % currentImages.length;
+    modalImage.src = currentImages[currentImageIndex];
+  });
+
+  /* ---------------- CLOSE MODAL ---------------- */
+
+  document.querySelector(".close-modal").onclick = () => {
+    modal.style.display = "none";
+    modalImage.src = "";
+  };
+
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && modal.style.display === "flex") {
+      modal.style.display = "none";
+      modalImage.src = "";
+    }
+
+    // Keyboard image navigation
+    if (modal.style.display === "flex") {
+      if (e.key === "ArrowRight") {
+        document.querySelector(".img-nav.next").click();
+      }
+      if (e.key === "ArrowLeft") {
+        document.querySelector(".img-nav.prev").click();
+      }
+    }
+  });
+
+});
+</script>
+
+</body>
+</html>
